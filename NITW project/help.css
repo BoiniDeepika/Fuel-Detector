@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr; 
+    height: 100vh; 
+}
+
+.nav-bar {
+    background-color: #ff8c00;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-links li {
+    margin: 15px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+.bottom-buttons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.help-button, .logout-button {
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.help-button {
+    background-color: #f44336;
+}
+
+.logout-button {
+    background-color: #f44336;
+}
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:#ff8c00;
+}
+.header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding:3%;
+}
+.sub-section {
+    margin-bottom:10px;
+}
+
+.input-field {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.content-section {
+    flex-grow: 1;
+}
+
+.content-textarea {
+    width: 70%;
+    height: 50%;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.button-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.send-mail-button {
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.send-mail-button:hover {
+    background-color: #ff8c00;
+}

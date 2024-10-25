@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Management Dashboard</title>
+    <link rel="stylesheet" href="devicemanagement.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo-section">
+                <img src="https://i.ibb.co/mRxGgqv/logo2.jpg" alt="Logo" class="logo">
+                <h2>Fuel Detector</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="devicemanagement.html">Device Management</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+            <div class="icons">
+                <div class="logout-section">
+                    <a href="help.html" class="help-button">
+                        <button>Help</button>
+                    </a>
+                    <a href="logout.html" class="logout-button">
+                        <button>Log Out</button>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <div class="cards">
+                    <div class="card">All Devices</div>
+                    <div class="card">Register Device</div>
+                    <div class="card">Add Group</div>
+                    <div class="card">Add Device Profile</div>
+                    <div class="card">Add Software</div>
+                    <div class="card">Add Firmware</div>
+                </div>
+            </div>
+
+            <div class="previous-fillings">
+                <h2>Previous Fuel Fillings</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Quantity Filled (Liters)</th>
+                            <th>Density (kg/L)</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-10-01</td>
+                            <td>40</td>
+                            <td>0.85</td>
+                            <td>$50</td>
+                            <td>Successful</td>
+                        </tr>
+                        <tr>
+                            <td>2024-09-15</td>
+                            <td>60</td>
+                            <td>0.84</td>
+                            <td>$70</td>
+                            <td>Successful</td>
+                        </tr>
+                        <tr>
+                            <td>2024-09-01</td>
+                            <td>30</td>
+                            <td>0.86</td>
+                            <td>$35</td>
+                            <td>Unsuccessful</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="recent-alarms">
+                <h3>Recent Alarms</h3>
+                <ul>
+                    <li>Back-off restarting failed container (billing-reporter)</li>
+                    <li>Back-off restarting failed container (billing-fetcher-one)</li>
+                    <li>Back-off restarting failed container (billing-fetcher)</li>
+                    <li>Node is not ready (cloud-remote-access)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Fuel Detector</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo-section">
+            <img src="https://i.ibb.co/mRxGgqv/logo2.jpg" alt="Logo" class="logo">
+            <h2>Fuel Detector</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="notification.html">Notification</a></li>
+            <li><a href="Devicemanagement.html">Device Management</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+        <div class="bottom-buttons">
+            <button class="help-button" onclick="goToHelp()">Help</button>
+            <button class="logout-button" onclick="logout()">Log Out</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Account Settings</h1>
+
+        <div class="settings-menu">
+            <ul>
+                <li><a href="settings.html">Profile Settings</a></li>
+                <li><a href="forgot.html">Password</a></li>
+            </ul>
+        </div>
+
+        <div class="settings-content">
+            <div class="profile-section">
+                <img src="https://i.ibb.co/4FYtZN8/avatar-placeholder.png" alt="Avatar" class="avatar">
+                <button class="upload-btn">Upload New</button>
+                <button class="delete-btn">Delete Avatar</button>
+            </div>
+
+            <form class="settings-form">
+                <div class="input-group">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First name">
+                </div>
+                <div class="input-group">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last name">
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="example@email.com">
+                </div>
+                <div class="input-group">
+                    <label>Mobile Number</label>
+                    <input type="tel" placeholder="+91">
+                </div>
+                <div class="input-group">
+                    <label>Gender</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Vehicle Number</label>
+                    <input type="text" placeholder="Enter">
+                </div>
+                <div class="input-group">
+                    <label>Tax Identification Country</label>
+                    <select>
+                        <option>India</option>
+                        <option>UK</option>
+                        <option>USA</option>
+                        <option>Australia</option>
+                        <option>Nigeria</option>
+                        <option>Belgium</option>
+                        <option>Canada</option>
+                        <option>china</option>
+                        <option>Denmark</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Residential Address</label>
+                    <textarea rows="3" placeholder="Enter your address"></textarea>
+                </div>
+
+                <button type="submit" class="save-btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function logout() {
+            window.location.href = "homepage.html"; // Redirects to the logout page
+        }
+
+        function goToHelp() {
+            window.location.href = "help.html"; // Redirects to the help page
+        }
+    </script>
+</body>
+</html>

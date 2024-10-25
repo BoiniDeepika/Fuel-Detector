@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Detector - Signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-box">
+            <img src="https://i.ibb.co/mRxGgqv/logo2.jpg" alt="Fuel Detector Logo" class="logo">
+            <h2>Signup</h2>
+            <form id="signupForm">
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-box">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="error-message" id="errorMessage"></div>
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a>.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            // Get form input values
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            const errorMessage = document.getElementById('errorMessage');
+        
+            // Clear previous error message
+            errorMessage.style.display = 'none';
+        
+            // Validate password and confirm password match
+            if (password !== confirmPassword) {
+                errorMessage.textContent = "Passwords do not match!";
+                errorMessage.style.display = 'block';
+                return;
+            }
+        
+            // Check if the user already exists in localStorage
+            const existingUser = JSON.parse(localStorage.getItem(email));
+            if (existingUser) {
+                errorMessage.textContent = "Email already exists!";
+                errorMessage.style.display = 'block';
+                return;
+            }
+        
+            // Save new user to localStorage
+            const userData = {
+                email: email,
+                password: password
+            };
+            localStorage.setItem(email, JSON.stringify(userData));
+        
+            // Display success message and redirect
+            alert("Signup successful!");
+            window.location.href ="login.html"; // Redirect to login page after signup
+        });
+        
+    </script>
+</body>
+</html>

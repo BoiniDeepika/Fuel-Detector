@@ -1,0 +1,172 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Container Layout: Vertical Sidebar + Main Content */
+.container {
+    display: flex;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+}
+
+/* Navigation Bar (Sidebar) */
+.nav-bar {
+    width: 250px;
+    background-color: #ff8c00;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Section */
+.logo-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    width: 100%;
+}
+
+.nav-links li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+.nav-links a:hover {
+    background-color: #ff8c00
+}
+
+/* Bottom Buttons */
+.bottom-buttons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.help-button, .logout-button {
+    padding: 10px;
+    background-color: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.help-button:hover, .logout-button:hover {
+    background-color: #c62828;
+}
+
+/* Main Content Layout */
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    background-color: white;
+}
+
+/* Quick Links Section */
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Previous Fuel Fillings Section */
+.previous-fillings h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+thead th {
+    background-color: #ff8c00;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Recent Alarms Section */
+.recent-alarms ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-alarms li {
+    background-color: #fafafa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}

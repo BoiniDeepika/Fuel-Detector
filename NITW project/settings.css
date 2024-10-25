@@ -1,0 +1,151 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f6fa;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100vh;
+    background-color:#ff8c00;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-links li {
+    margin: 15px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.bottom-buttons {
+    margin-top: auto;
+}
+
+.help-button, .logout-button {
+    background-color: #d63031;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 90%;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.container {
+    margin-left: 270px;
+    padding: 40px;
+}
+
+h1 {
+    color: #2d3436;
+}
+.settings-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.settings-menu li {
+    margin-right: 20px;
+}
+
+.settings-menu a {
+    text-decoration: none;
+    color: #636e72;
+    font-size: 18px;
+}
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.upload-btn, .delete-btn {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.settings-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    color: #2d3436;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.gender-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.save-btn {
+    grid-column: span 2;
+    background-color:#ff8c00;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
